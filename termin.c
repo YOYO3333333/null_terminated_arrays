@@ -1,17 +1,6 @@
 #include "null_terminated_arrays.h"
 
 #include <stddef.h>
-
-size_t len_array(const char ***arr, size_t i)
-{
-    size_t LEN = 0;
-    if (arr[i])
-    {
-        while (arr[i][LEN])
-            j++;
-    }
-    return j;
-}
 void reverse_matrix(const char ***matrix)
 {
     size_t len = 0;
@@ -39,3 +28,15 @@ void reverse_matrix(const char ***matrix)
     }
     return;
 }
+
+size_t len_array(const char ***arr, size_t i)
+{
+    size_t LEN = 0;
+    if (arr[i])
+    {
+        while (arr[i][LEN])
+            j++;
+    }
+    return j;
+}
+
